@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUNPUNCH Arena — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;0,6..12,800;0,6..12,900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0A0A0A;
+    --ink:#F5F5F5;
+    --muted:#8A8A8A;
+    --line:#222222;
+    --red:#D3322F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:var(--black);
+    color:var(--ink);
+    font-family:"Nunito Sans",system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    padding:0 24px 80px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;}
+
+  header{padding:72px 0 40px;border-bottom:1px solid var(--line);}
+  .eyebrow{
+    color:var(--red);
+    font-weight:800;
+    font-size:13px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  h1{
+    font-weight:900;
+    font-size:clamp(40px,9vw,68px);
+    line-height:.98;
+    letter-spacing:-.01em;
+    text-transform:uppercase;
+  }
+  .lede{color:var(--muted);font-size:18px;margin-top:20px;max-width:48ch;}
+
+  .contact{
+    margin:36px 0 0;
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    background:var(--red);
+    color:#fff;
+    text-decoration:none;
+    font-weight:800;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    font-size:15px;
+    padding:18px 28px;
+  }
+  .contact:hover{background:#b82b28;}
+  .contact:focus-visible{outline:3px solid #fff;outline-offset:3px;}
+  .contact .arrow{font-weight:900;}
+
+  .respond{color:var(--muted);font-size:14px;margin-top:14px;}
+
+  h2{
+    font-weight:800;
+    font-size:13px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:64px 0 8px;
+  }
+
+  .faq{margin-top:18px;}
+  .item{padding:24px 0;border-bottom:1px solid var(--line);}
+  .item:first-child{border-top:1px solid var(--line);}
+  .q{
+    font-weight:800;
+    font-size:19px;
+    border-left:3px solid var(--red);
+    padding-left:16px;
+    margin-bottom:10px;
+  }
+  .a{color:#cfcfcf;padding-left:19px;}
+
+  .links{margin-top:48px;font-size:15px;}
+  .links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--red);padding-bottom:2px;}
+  .links a:hover{color:var(--red);}
+  .links a:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
+
+  footer{
+    margin-top:64px;padding-top:28px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  }
+  footer .tag{letter-spacing:.04em;text-transform:uppercase;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">FUNPUNCH Arena · Support</div>
+      <h1>Hit a snag?</h1>
+      <p class="lede">Most things sort themselves out below. If not, mail us straight.</p>
+      <a class="contact" href="mailto:support@funpunch.app">Email support <span class="arrow">&rarr;</span></a>
+      <p class="respond">We read every message. Replies usually land within two days.</p>
+    </header>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+
+      <div class="item">
+        <div class="q">My punches aren't counting.</div>
+        <div class="a">Bag Mode needs the physical Rage-Bag, plus camera and mic access. Prop the phone so it can see your upper body, clear your space, and make sure the room isn't too dark. Soft taps may not register — throw real punches.</div>
+      </div>
+
+      <div class="item">
+        <div class="q">Does FUNPUNCH record me?</div>
+        <div class="a">No. The camera and mic run entirely on your phone. Nothing is recorded, saved, or uploaded. We don't collect anything ourselves. See the privacy policy below for the full breakdown.</div>
+      </div>
+
+      <div class="item">
+        <div class="q">Do I need an account?</div>
+        <div class="a">No account, no sign-up. Your name, ranks, and personal bests live on your device.</div>
+      </div>
+
+      <div class="item">
+        <div class="q">The camera or mic won't turn on.</div>
+        <div class="a">Open the iPhone Settings app, scroll to FUNPUNCH, and switch Camera and Microphone on. Then reopen the app.</div>
+      </div>
+
+      <div class="item">
+        <div class="q">How do I reset my stats?</div>
+        <div class="a">Open Settings inside the app. You'll find the option to clear your progress there. This can't be undone.</div>
+      </div>
+
+      <div class="item">
+        <div class="q">Where do I get a Rage-Bag?</div>
+        <div class="a">Bag Mode pairs with the physical Rage-Bag. Email us using the button above and we'll point you to it.</div>
+      </div>
+
+    </div>
+
+    <p class="links">Read our <a href="https://funpunch.github.io/funpunch-app-privacy/">Privacy Policy</a>.</p>
+
+    <footer>
+      <span>&copy; 2026 FUNPUNCH</span>
+      <span class="tag">Real movement. Less screen time.</span>
+    </footer>
+  </div>
+</body>
+</html>
